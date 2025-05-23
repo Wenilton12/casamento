@@ -1,0 +1,394 @@
+/* Importação de Fontes */
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap'); */
+
+:root {
+    --primary-color: #A36F6E; /* Tom de rosa/nude */
+    --secondary-color: #F8F4F1; /* Off-white / Creme */
+    --dark-color: #333333;
+    --light-color: #f8f9fa;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--dark-color);
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+/* Navbar Personalizada */
+.navbar {
+    background-color: rgba(163, 111, 110, 0.9); /* Cor primária com transparência */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--light-color) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--light-color) !important;
+    font-weight: 400;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Seção de Capa (Hero Section) */
+.hero-section {
+    height: 100vh;
+    /* IMAGEM DE FUNDO DA CAPA AGORA É UMA URL ONLINE */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/img/noivos.png') no-repeat center center/cover;
+    position: relative;
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    color: var(--light-color);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-section p.lead {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-section .data-casamento {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/* Contagem Regressiva */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--light-color);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.countdown-item small {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #8c5d5c; /* Tom mais escuro da cor primária */
+    border-color: #8c5d5c;
+    transform: translateY(-2px);
+}
+
+.btn-light {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    border-color: var(--light-color);
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #e0e0e0;
+    color: var(--primary-color);
+    border-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: var(--light-color);
+}
+
+.btn-outline-info {
+    color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-outline-info:hover {
+    background-color: #17a2b8;
+    color: var(--light-color);
+}
+
+.btn-outline-warning {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: var(--dark-color);
+}
+
+
+/* Títulos de Seção */
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block; /* Para centralizar o pseudo-elemento */
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 10px auto 0; /* Centraliza a linha */
+}
+
+/* Seção Nossa História */
+#historia {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#historia .img-fluid {
+    max-width: 80%;
+    height: auto;
+    border: 5px solid var(--primary-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Galeria */
+.bg-light-soft {
+    background-color: var(--light-color);
+}
+
+#galeria img {
+    height: 300px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Recorta a imagem para preencher o espaço */
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+#galeria img.hover-grow:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Modal de Imagem */
+#imageModal .modal-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para o modal */
+}
+
+#imageModal .modal-body {
+    padding: 0;
+}
+
+#imageModal #modalImage {
+    max-height: 90vh; /* Limita a altura da imagem no modal */
+    width: auto;
+    object-fit: contain;
+}
+
+.modal-backdrop.show {
+    opacity: 0.8 !important; /* Deixa o fundo do modal mais escuro */
+}
+
+/* Lista de Presentes */
+.gift-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Para flexbox no card */
+    flex-direction: column; /* Conteúdo em coluna */
+    justify-content: space-between; /* Espaçamento entre conteúdo e botão */
+}
+
+.gift-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.gift-card .card-body {
+    padding: 2.5rem 1.5rem;
+}
+
+.gift-card i {
+    color: var(--primary-color);
+}
+
+/* Formulário RSVP */
+#rsvp form {
+    background-color: var(--light-color);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+#rsvp .form-label {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+#rsvp .form-control {
+    border-radius: 10px;
+    border-color: #ddd;
+}
+
+#rsvp .btn-primary {
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+    padding: 40px 0;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Animações (Animate.css já linkado no HTML) */
+
+
+/* Media Queries para Responsividade */
+@media (max-width: 991.98px) {
+    .hero-section h1 {
+        font-size: 3.5rem;
+    }
+    .hero-section p.lead {
+        font-size: 1.5rem;
+    }
+    .hero-section .data-casamento {
+        font-size: 1.8rem;
+    }
+    .countdown-item {
+        font-size: 2rem;
+        gap: 15px;
+    }
+    .section-title {
+        font-size: 2.5rem;
+    }
+    #historia .img-fluid {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+    .hero-section p.lead {
+        font-size: 1.2rem;
+    }
+    .hero-section .data-casamento {
+        font-size: 1.5rem;
+    }
+    .countdown-item {
+        font-size: 1.8rem;
+        gap: 10px;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        text-align: center;
+    }
+    #historia .col-md-6 {
+        order: 2 !important; /* Garante que o texto fique acima da imagem em telas menores */
+    }
+    #historia .text-md-start {
+        text-align: center !important;
+    }
+    #galeria img {
+        height: 250px;
+    }
+    .gift-card .card-body {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+    .hero-section p.lead {
+        font-size: 1rem;
+    }
+    .hero-section .data-casamento {
+        font-size: 1.2rem;
+    }
+    .countdown-item {
+        font-size: 1.5rem;
+    }
+    .btn-primary, .btn-light {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    #galeria img {
+        height: 200px;
+    }
+}
