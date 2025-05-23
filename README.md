@@ -1,6 +1,6 @@
 # Casamento: Laura & Pedro 💍
 
-Este é o repositório do site do casamento de Laura e Pedro, criado para compartilhar informações sobre o grande dia, nossa história, galeria de fotos, lista de presentes e permitir que os convidados confirmem sua presença (RSVP).
+Este é um modelo de site do casamento de Laura e Pedro, criado para compartilhar informações sobre o grande dia, nossa história, galeria de fotos, lista de presentes e permitir que os convidados confirmem sua presença (RSVP).
 
 ## 📂 Estrutura do Projeto
 
